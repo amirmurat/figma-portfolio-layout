@@ -141,5 +141,46 @@
         </ul>
     </nav>
 </header>
+<main>
+<!--
+<main> — основной контент страницы.
+Содержит всё, что является центральной частью страницы: текст, изображения, видео, формы и т.д.
+Внутри <main> обычно размещаются секции с контентом, которые логически связаны между собой.
+-->
+    <section class="hero">
+    <!--
+    <section class="hero">
+    <section> — семантический тег для раздела страницы.
+    Используется для группировки связанных элементов.
+    class="hero" — CSS-класс, который стилизует этот раздел как "геройский" блок.
+    Геройский блок — это большой, заметный раздел в начале страницы, часто с фоном, заголовком и кнопкой.
+    -->
+        <div class="container">
+        <!--
+        <div> — универсальный контейнер для группировки элементов.
+        -->
+            <div class="hero-grid">
+                <div class="hero-left">
+                    <div class="hero-text">
+                        <p class="subtitle">Branding | Image making</p>
+                        <h1 class="hero-title">Visual Designer</h1>
+                        <p class="hero-description">
+                        This is a template Figma file, turned into code using Anima. 
+                        <br>Learn more at AnimaApp.com
+                        <!--
+                        <br> — перенос строки.
+                        Позволяет разделить текст на несколько строк без создания нового параграфа.
+                        -->
+                    </p>
+                    </div>
+                    <a href="#contact" class="btn">Contact</a>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/hero-image.png" alt="Portrait of a designer">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 </body>
 </html>

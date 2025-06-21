@@ -23,6 +23,73 @@
     */
 }
 
+body {
+    font-family: 'Epilogue', sans-serif;
+    /*
+    font-family: 'Epilogue', sans-serif — устанавливает шрифт для текста ссылок.
+    'Epilogue' — это название шрифта, который должен быть подключен в HTML.
+    sans-serif — запасной шрифт, который будет использоваться, если 'Epilogue' недоступен.
+    */
+    color: black;
+    /*
+    color: black — устанавливает цвет текста ссылок в черный.
+    */
+    text-decoration: none;
+    /*
+    text-decoration: none — убирает подчеркивание у ссылок.
+    */
+    font-weight: 400;
+    /*
+    font-weight: 400 — устанавливает толщину шрифта.
+    400 — это стандартная толщина, которая соответствует нормальному тексту.
+    */
+    font-size: 17px;
+    /*
+    font-size: 17px — устанавливает размер шрифта в 17 пикселей.
+    Это определяет, насколько крупным будет текст ссылок.
+    */
+    line-height: 27px;
+    /*
+    line-height: 27px — устанавливает высоту строки в 27 пикселей.
+    Это определяет расстояние между базовыми линиями текста, что влияет на читаемость.
+    */
+}
+
+a {
+    text-decoration: 0;
+    color: inherit;
+    /*
+    a — это селектор для ссылок.
+    text-decoration: 0 — убирает подчеркивание у ссылок.
+    color: inherit — устанавливает цвет ссылок таким же, как у родительского элемента.
+    Это значит, что ссылки будут черными, как задано в body.
+    */
+}
+
+h1 {
+    font-size: 68px;
+    line-height: 70px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 27px;
+    line-height: 42px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
 .navbar {
     height: 78px;
     width: 100%;
@@ -74,34 +141,45 @@
     */
 }
 
-.nav-links a {
-    text-decoration: none;
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(45, 45, 45, 1);
     /*
-    text-decoration: none — убирает подчеркивание у ссылок.
+    background-color: rgba(45, 45, 45, 1) — устанавливает цвет фона кнопки.
+    rgba(45, 45, 45, 1) — это цвет в формате RGBA, где 1 означает полную непрозрачность.
     */
-    color: black;
+    color: white;
+    height: 78px;
+    width: 211px;
+
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.hero-grid {
+    padding: 42px 56px 42px 56px;
+    height: 444px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-left {
+    margin: 16px 0 16px 0;
+    display: flex;
+    flex-direction: column;
     /*
-    color: black — устанавливает цвет текста ссылок в черный.
+    flex-direction: column — располагает дочерние элементы вертикально.
+    Это значит, что элементы внутри .hero-text будут выстроены один под другим.
     */
-    font-family: 'Epilogue', sans-serif;
-    /*
-    font-family: 'Epilogue', sans-serif — устанавливает шрифт для текста ссылок.
-    'Epilogue' — это название шрифта, который должен быть подключен в HTML.
-    sans-serif — запасной шрифт, который будет использоваться, если 'Epilogue' недоступен.
-    */
-    font-weight: regular;
-    /*
-    font-weight: 600 — устанавливает толщину шрифта.
-    600 — это полужирный шрифт, который делает текст более заметным.
-    */
-    font-size: 17px;
-    /*
-    font-size: 17px — устанавливает размер шрифта в 17 пикселей.
-    Это определяет, насколько крупным будет текст ссылок.
-    */
-    line-height: 27px;
-    /*
-    line-height: 27px — устанавливает высоту строки в 27 пикселей.
-    Это определяет расстояние между базовыми линиями текста, что влияет на читаемость.
-    */
+    justify-content: space-between;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
