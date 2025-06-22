@@ -183,3 +183,39 @@ h3 {
     flex-direction: column;
     gap: 24px;
 }
+
+.logo-grid {
+    height: 130.83px;
+    padding: 42px 43.58px 42px 68px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.google-logo {
+    height: 38.21px;
+    width: 116.07px;
+}
+
+.nike-logo {
+    height: 30.74px;
+    width: 86.42px;
+}
+
+.samsung-logo {
+    height: 17.41px;
+    width: 113.11px;
+}
+
+.apple-logo {
+    height: 46.83px;
+    width: 38.11px;
+}
+
+.adidas-logo {
+    height: 43.67px;
+    width: 64.94px;
+}
