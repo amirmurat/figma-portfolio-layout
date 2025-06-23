@@ -55,6 +55,12 @@ body {
     */
 }
 
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 a {
     text-decoration: 0;
     color: inherit;
@@ -190,9 +196,8 @@ h3 {
     height: 130.83px;
     padding: 42px 43.58px 42px 68px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 181.34px;
 }
 
 .google-logo {
@@ -246,4 +251,41 @@ h3 {
     flex-direction: column;
     text-align: center;
     gap: 12px;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 42px 24px 42px 24px;
+}
+
+.gallery-cards-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 862px;
+    margin-top: 42px;
+}
+
+.gallery-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+
+.gallery-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.gallery-image {
+    width: 394.67px;
+    height: 330px;
 }

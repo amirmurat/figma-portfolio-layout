@@ -74,162 +74,225 @@
 заголовки, текст, изображения, кнопки, секции и т.д.
 Всё, что видит пользователь на экране, должно быть внутри <body>.
 -->
-<header>
-<!-- 
-<header> — семантический тег для шапки страницы или раздела.
-Содержит логотип, навигацию, заголовки и другие важные элементы начала.
--->
-    <nav class="navbar">
-    <!-- 
-    <nav> — семантический тег для блока навигации.
-    Содержит ссылки, ведущие на разделы страницы или на другие страницы сайта.
-    Часто используется внутри <header> или <footer>.
-
-    Атрибут class — используется для назначения классов элементам.
-    Позволяет применять CSS-стили, логически структурировать код и обращаться к элементу через JavaScript.
-    Один и тот же класс можно использовать на нескольких элементах.
-    -->
-        <div class="logo">
+    <div class="container">   
+        <header>
         <!-- 
-        <div> — универсальный контейнер без собственного значения.
-        Используется для группировки элементов и создания блоков.
-        Сам по себе ничего не делает, применяется с class/id для стилизации или логики.
+        <header> — семантический тег для шапки страницы или раздела.
+        Содержит логотип, навигацию, заголовки и другие важные элементы начала.
         -->
-            <img src="assets/Logo.svg" alt="Logo">
+            <nav class="navbar">
             <!-- 
-            <img src="assets/Logo.svg" alt="Logo">
+            <nav> — семантический тег для блока навигации.
+            Содержит ссылки, ведущие на разделы страницы или на другие страницы сайта.
+            Часто используется внутри <header> или <footer>.
 
-            <img> — тег для вставки изображения на страницу.
-            src="assets/Logo.svg" — путь к изображению. В данном случае это SVG-файл в папке assets.
-            alt="Logo" — альтернативный текст, который отображается, если изображение не загрузилось.
-            Также важен для SEO и доступности (например, скринридеров).
-
-            SVG (Scalable Vector Graphics) — это векторный формат изображения.
-            Преимущества SVG:
-            - Масштабируется без потери качества (идеально для логотипов и иконок)
-            - Обычно весит меньше, чем PNG/JPG
-            - Можно изменять цвет и анимации через CSS
-            - Читается как текст (XML)
-
-            Не подходит для фотографий — там лучше использовать JPG или WebP.
-
-            SEO (Search Engine Optimization) — оптимизация сайта для поисковиков.
-            В HTML это значит:
-            - Использовать <title> с ясным заголовком страницы
-            - Указывать <meta name="description"> с кратким описанием
-            - Прописывать alt-тексты у <img>
-            - Строить заголовки по смыслу: <h1> → <h2> → <h3> и т.д.
-            Хорошее SEO помогает сайту появляться в результатах поиска.
+            Атрибут class — используется для назначения классов элементам.
+            Позволяет применять CSS-стили, логически структурировать код и обращаться к элементу через JavaScript.
+            Один и тот же класс можно использовать на нескольких элементах.
             -->
-        </div>
-        <ul class="nav-links">
-        <!-- 
-        <ul class="nav-links"> 
-        <ul> — тег неупорядоченного списка (unordered list), используется для отображения пунктов меню.
-        class="nav-links" — CSS-класс, по которому можно стилизовать весь список навигации.
-        Обычно внутри <ul> находятся <li> (элементы списка), каждый из которых содержит ссылку <a>.
-        -->
-            <li><a href="#about">About</a></li>
-            <!-- 
-            <li> — элемент списка. 
-            Используется внутри <ul> или <ol> для создания отдельных пунктов.
-            <a href="#about"> — якорная ссылка, ведущая к элементу с id="about".
-            При клике страница плавно прокрутится до указанного блока.
-            -->
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-<!--
-<main> — основной контент страницы.
-Содержит всё, что является центральной частью страницы: текст, изображения, видео, формы и т.д.
-Внутри <main> обычно размещаются секции с контентом, которые логически связаны между собой.
--->
-    <section class="hero">
-    <!--
-    <section class="hero">
-    <section> — семантический тег для раздела страницы.
-    Используется для группировки связанных элементов.
-    class="hero" — CSS-класс, который стилизует этот раздел как "геройский" блок.
-    Геройский блок — это большой, заметный раздел в начале страницы, часто с фоном, заголовком и кнопкой.
-    -->
-        <div class="container">
+                <div class="logo">
+                <!-- 
+                <div> — универсальный контейнер без собственного значения.
+                Используется для группировки элементов и создания блоков.
+                Сам по себе ничего не делает, применяется с class/id для стилизации или логики.
+                -->
+                    <img src="assets/Logo.svg" alt="Logo">
+                    <!-- 
+                    <img src="assets/Logo.svg" alt="Logo">
+
+                    <img> — тег для вставки изображения на страницу.
+                    src="assets/Logo.svg" — путь к изображению. В данном случае это SVG-файл в папке assets.
+                    alt="Logo" — альтернативный текст, который отображается, если изображение не загрузилось.
+                    Также важен для SEO и доступности (например, скринридеров).
+
+                    SVG (Scalable Vector Graphics) — это векторный формат изображения.
+                    Преимущества SVG:
+                    - Масштабируется без потери качества (идеально для логотипов и иконок)
+                    - Обычно весит меньше, чем PNG/JPG
+                    - Можно изменять цвет и анимации через CSS
+                    - Читается как текст (XML)
+
+                    Не подходит для фотографий — там лучше использовать JPG или WebP.
+
+                    SEO (Search Engine Optimization) — оптимизация сайта для поисковиков.
+                    В HTML это значит:
+                    - Использовать <title> с ясным заголовком страницы
+                    - Указывать <meta name="description"> с кратким описанием
+                    - Прописывать alt-тексты у <img>
+                    - Строить заголовки по смыслу: <h1> → <h2> → <h3> и т.д.
+                    Хорошее SEO помогает сайту появляться в результатах поиска.
+                    -->
+                </div>
+                <ul class="nav-links">
+                <!-- 
+                <ul class="nav-links"> 
+                <ul> — тег неупорядоченного списка (unordered list), используется для отображения пунктов меню.
+                class="nav-links" — CSS-класс, по которому можно стилизовать весь список навигации.
+                Обычно внутри <ul> находятся <li> (элементы списка), каждый из которых содержит ссылку <a>.
+                -->
+                    <li><a href="#about">About</a></li>
+                    <!-- 
+                    <li> — элемент списка. 
+                    Используется внутри <ul> или <ol> для создания отдельных пунктов.
+                    <a href="#about"> — якорная ссылка, ведущая к элементу с id="about".
+                    При клике страница плавно прокрутится до указанного блока.
+                    -->
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
         <!--
-        <div> — универсальный контейнер для группировки элементов.
+        <main> — основной контент страницы.
+        Содержит всё, что является центральной частью страницы: текст, изображения, видео, формы и т.д.
+        Внутри <main> обычно размещаются секции с контентом, которые логически связаны между собой.
         -->
-            <div class="hero-grid">
-                <div class="hero-left">
-                    <div class="hero-text">
-                        <p class="subtitle">Branding | Image making</p>
-                        <h1>Visual Designer</h1>
-                        <p>
-                        This is a template Figma file, turned into code using Anima. 
-                        <br>Learn more at AnimaApp.com
-                        <!--
-                        <br> — перенос строки.
-                        Позволяет разделить текст на несколько строк без создания нового параграфа.
-                        -->
-                        </p>
+            <section class="hero">
+            <!--
+            <section class="hero">
+            <section> — семантический тег для раздела страницы.
+            Используется для группировки связанных элементов.
+            class="hero" — CSS-класс, который стилизует этот раздел как "геройский" блок.
+            Геройский блок — это большой, заметный раздел в начале страницы, часто с фоном, заголовком и кнопкой.
+            -->
+                
+                <div class="hero-grid">
+                    <div class="hero-left">
+                        <div class="hero-text">
+                            <p class="subtitle">Branding | Image making</p>
+                            <h1>Visual Designer</h1>
+                            <p>
+                            This is a template Figma file, turned into code using Anima. 
+                            <br>Learn more at AnimaApp.com
+                            <!--
+                            <br> — перенос строки.
+                            Позволяет разделить текст на несколько строк без создания нового параграфа.
+                            -->
+                            </p>
+                        </div>
+                        <a href="#contact" class="btn">Contact</a>
                     </div>
-                    <a href="#contact" class="btn">Contact</a>
+                    <div class="hero-image">
+                        <img src="assets/hero-image.png" alt="Portrait of a designer">
+                    </div>
                 </div>
-                <div class="hero-image">
-                    <img src="assets/hero-image.png" alt="Portrait of a designer">
+            </section>
+            <section class="brands">
+                <div class="brands-grid">
+                    <img src="assets/Google.svg" alt="Google Logo">
+                    <img src="assets/Nike.svg" alt="Nike Logo">
+                    <img src="assets/Samsung.svg" alt="Samsung Logo">
+                    <img src="assets/Apple.svg" alt="Apple Logo">
+                    <img src="assets/Adidas.svg" alt="Adidas Logo">
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="brands">
-        <div class="brands-grid">
-            <img src="assets/Google.svg" alt="Google Logo">
-            <img src="assets/Nike.svg" alt="Nike Logo">
-            <img src="assets/Samsung.svg" alt="Samsung Logo">
-            <img src="assets/Apple.svg" alt="Apple Logo">
-            <img src="assets/Adidas.svg" alt="Adidas Logo">
-        </div>
-    </section>
-    <section class="skills">
-        <div class="skills-grid">
-            <div class="skill-card">
-                <div class="skill-card-icon">
-                    <img src="assets/skills-card-icon-1.svg">
+            </section>
+            <section class="skills">
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-card-icon">
+                            <img src="assets/skills-card-icon-1.svg">
+                        </div>
+                        <div class="skill-card-text">
+                            <h3>Product Design</h3>
+                            <p>
+                            This is a template Figma file, turned
+                            <br>into code using Anima. Learn more at
+                            <br>AnimaApp.com</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-card-icon">
+                            <img src="assets/skills-card-icon-2.svg">
+                        </div>
+                        <div class="skill-card-text">
+                            <h3>Visual Design</h3>
+                            <p>
+                            This is a template Figma file, turned
+                            <br>into code using Anima. Learn more at
+                            <br>AnimaApp.com</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-card-icon">
+                            <img src="assets/skills-card-icon-3.svg">
+                        </div>
+                        <div class="skill-card-text">
+                            <h3>Art Direction</h3>
+                            <p>
+                            This is a template Figma file, turned
+                            <br>into code using Anima. Learn more at
+                            <br>AnimaApp.com</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-card-text">
-                    <h3>Product Design</h3>
-                    <p>
-                    This is a template Figma file, turned
-                    <br>into code using Anima. Learn more at
-                    <br>AnimaApp.com</p>
+            </section>
+            <section class="gallery">
+                <div class="gallery-grid">
+                    <h2>Latest work</h2>
+                    <div class="gallery-cards-grid">
+                        <div class="gallery-cards">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="assets/gallery-image-1.png">
+                                </div>
+                                <div class="gallery-bottom-text">
+                                    <p class="subtitle">Project title</p>
+                                    <p>UI, Art drection</p>
+                                </div>
+                            </div>
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="assets/gallery-image-2.png">
+                                </div>
+                                <div class="gallery-bottom-text">
+                                    <p class="subtitle">Project title</p>
+                                    <p>UI, Art drection</p>
+                                </div>
+                            </div>
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="assets/gallery-image-3.png">
+                                </div>
+                                <div class="gallery-bottom-text">
+                                    <p class="subtitle">Project title</p>
+                                    <p>UI, Art drection</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-cards">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="assets/gallery-image-4.png">
+                                </div>
+                                <div class="gallery-bottom-text">
+                                    <p class="subtitle">Project title</p>
+                                    <p>UI, Art drection</p>
+                                </div>
+                            </div>
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="assets/gallery-image-5.png">
+                                </div>
+                                <div class="gallery-bottom-text">
+                                    <p class="subtitle">Project title</p>
+                                    <p>UI, Art drection</p>
+                                </div>
+                            </div>
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="assets/gallery-image-6.png">
+                                </div>
+                                <div class="gallery-bottom-text">
+                                    <p class="subtitle">Project title</p>
+                                    <p>UI, Art drection</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-card-icon">
-                    <img src="assets/skills-card-icon-2.svg">
-                </div>
-                <div class="skill-card-text">
-                    <h3>Visual Design</h3>
-                    <p>
-                    This is a template Figma file, turned
-                    <br>into code using Anima. Learn more at
-                    <br>AnimaApp.com</p>
-                </div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-card-icon">
-                    <img src="assets/skills-card-icon-3.svg">
-                </div>
-                <div class="skill-card-text">
-                    <h3>Art Direction</h3>
-                    <p>
-                    This is a template Figma file, turned
-                    <br>into code using Anima. Learn more at
-                    <br>AnimaApp.com</p>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
