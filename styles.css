@@ -253,7 +253,7 @@ h3 {
     gap: 12px;
 }
 
-.gallery-grid {
+.cards {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -261,19 +261,16 @@ h3 {
     padding: 42px 24px 42px 24px;
 }
 
-.gallery-cards-grid {
+.cards-grid {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 862px;
     margin-top: 42px;
+    gap: 24px;
 }
 
-.gallery-cards {
+.cards-row {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     gap: 24px;
 }
 
@@ -281,11 +278,55 @@ h3 {
 .gallery-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 24px;
 }
 
 .gallery-image {
     width: 394.67px;
     height: 330px;
+}
+
+.gallery-bottom-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+    padding: 42px;
+    background-color: #F3F3F3;
+}
+
+.client {
+    display: flex;
+    gap: 16px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.stars {
+    display: flex;
+    gap: 6px;
+}
+
+.stars img {
+    width: 20px;
+    height: 20px;
+}
+
+.client-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* 
+    border-radius: 50% — делает изображение круглым.
+    Это означает, что края изображения будут закруглены, создавая эффект круга.
+    */
 }
