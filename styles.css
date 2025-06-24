@@ -330,3 +330,52 @@ h3 {
     Это означает, что края изображения будут закруглены, создавая эффект круга.
     */
 }
+
+.contact-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 42px 24px 86px 24px;
+}
+
+.contact-content {
+    display: flex;
+    gap: 142px;
+}
+
+.social-links {
+    display: flex;
+    gap: 24px;
+}
+
+.social-links img {
+    width: 36px;
+    height: 36px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+input {
+    background-color: #F3F3F3;
+    padding: 16px 24px;
+    border: none;
+    height: 59px;
+    width: 100%;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+    gap: 12px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
