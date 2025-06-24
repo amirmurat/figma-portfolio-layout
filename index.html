@@ -67,6 +67,14 @@
     rel="stylesheet" указывает, что это таблица стилей.
     href="styles.css" — путь к файлу со стилями.
     -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    Этот тег помогает сделать страницу адаптивной.
+    Он сообщает браузеру, что ширина страницы должна соответствовать ширине экрана устройства.
+    initial-scale=1.0 устанавливает начальный масштаб страницы на 100%.
+    Это важно для мобильных устройств, чтобы страница корректно отображалась на разных экранах.
+    -->
 </head>
 <body>
 <!-- 
@@ -90,7 +98,7 @@
             Позволяет применять CSS-стили, логически структурировать код и обращаться к элементу через JavaScript.
             Один и тот же класс можно использовать на нескольких элементах.
             -->
-                <div class="logo">
+                <a href="#" class="logo">
                 <!-- 
                 <div> — универсальный контейнер без собственного значения.
                 Используется для группировки элементов и создания блоков.
@@ -122,7 +130,7 @@
                     - Строить заголовки по смыслу: <h1> → <h2> → <h3> и т.д.
                     Хорошее SEO помогает сайту появляться в результатах поиска.
                     -->
-                </div>
+                </a>
                 <ul class="nav-links">
                 <!-- 
                 <ul class="nav-links"> 
@@ -130,7 +138,7 @@
                 class="nav-links" — CSS-класс, по которому можно стилизовать весь список навигации.
                 Обычно внутри <ul> находятся <li> (элементы списка), каждый из которых содержит ссылку <a>.
                 -->
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">About</a></li>
                     <!-- 
                     <li> — элемент списка. 
                     Используется внутри <ul> или <ol> для создания отдельных пунктов.
@@ -178,7 +186,7 @@
                     </div>
                 </div>
             </section>
-            <section class="brands">
+            <section id="brands">
                 <div class="brands-grid">
                     <img src="assets/Google.svg" alt="Google Logo">
                     <img src="assets/Nike.svg" alt="Nike Logo">
@@ -187,7 +195,7 @@
                     <img src="assets/Adidas.svg" alt="Adidas Logo">
                 </div>
             </section>
-            <section class="skills">
+            <section id="skills">
                 <div class="skills-grid">
                     <div class="skill-card">
                         <div class="skill-card-icon">
@@ -227,7 +235,7 @@
                     </div>
                 </div>
             </section>
-            <section class="gallery">
+            <section id="gallery">
                 <div class="cards">
                     <h2>Latest work</h2>
                     <div class="cards-grid">
@@ -292,7 +300,7 @@
                     </div>
                 </div>
             </section>
-            <section class="testimonial">
+            <section id="testimonial">
                 <div class="cards">
                     <h2>Testimonial</h2>
                     <div class="cards-grid">
@@ -465,7 +473,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contact">
+            <section id="contact">
                 <div class="contact-grid">
                     <h2>Lets work together</h2>
                     <div class="contact-content">
@@ -476,11 +484,21 @@
                             <br>code using Anima. Learn more at AnimaApp.com
                             </p>
                             <div class="social-links">
-                                <img src="assets/discord.svg" alt="Discord Logo">
-                                <img src="assets/facebook.svg" alt="Facebook Logo">
-                                <img src="assets/dribbble.svg" alt="Dribbble Logo">
-                                <img src="assets/instagram.svg" alt="Instagram Logo">
-                                <img src="assets/behance.svg" alt="Behance Logo">
+                                <a href="" class="discord">
+                                    <img src="assets/discord.svg" alt="Discord Logo">
+                                </a>
+                                <a href="" class="facebook">
+                                    <img src="assets/facebook.svg" alt="Facebook Logo">
+                                </a>
+                                <a href="" class="dribbble">
+                                    <img src="assets/dribbble.svg" alt="Dribbble Logo">
+                                </a>
+                                <a href="" class="instagram">
+                                    <img src="assets/instagram.svg" alt="Instagram Logo">
+                                </a>
+                                <a href="" class="behance">
+                                    <img src="assets/behance.svg" alt="Behance Logo">
+                                </a>
                             </div>
                         </div>
                         <form class="contact-form">
