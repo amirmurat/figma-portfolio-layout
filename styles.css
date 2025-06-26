@@ -178,6 +178,16 @@ h3 {
     */
 }
 
+@media (max-width: 600px) {
+    .about {
+        display: none;
+    }
+    .nav-links {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
 .btn {
     display: flex;
     justify-content: center;
@@ -202,11 +212,9 @@ h3 {
 
 .hero-grid {
     padding: 42px 56px 42px 56px;
-    height: 444px;
     width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 68px;
+    justify-content: space-between;
 }
 
 .hero-left {
@@ -225,6 +233,37 @@ h3 {
     flex-direction: column;
     gap: 24px;
     margin-bottom: 48px;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: flex-end;
+    height: 360px;
+    width: 480px;
+}
+
+@media (max-width: 1024px) {
+    /*
+    @media (max-width: 1024px) — это медиа-запрос,
+    который применяется, когда ширина экрана меньше или равна 1024 пикселя.
+    Это позволяет адаптировать стили для устройств с меньшим экраном, таких как планшеты
+    или большие смартфоны.
+    */
+    .hero-grid {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-left {
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .hero-image {
+        display: none;
+    }
 }
 
 .brands-grid {
@@ -260,12 +299,23 @@ h3 {
     width: 64.94px;
 }
 
+@media (max-width: 600px) {
+    .brands-grid {
+        padding: 0;
+    }
+
+    .nike-logo,
+    .apple-logo {
+        display: none;
+    }
+}
+
 .skills-grid {
     height: 513px;
     padding: 42px 24px 42px 24px;
     display: flex;
-    gap: 24px;
-    justify-content: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .skill-card {
@@ -288,6 +338,12 @@ h3 {
     gap: 12px;
 }
 
+@media (max-width: 600px) {
+    .skills {
+        display: none;
+    }
+}
+
 .cards {
     display: flex;
     flex-direction: column;
@@ -297,18 +353,45 @@ h3 {
 }
 
 .cards-grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    /*
+    display: grid — делает элемент контейнером сетки.
+    Сетка позволяет организовать дочерние элементы в виде строк и столбцов.
+    */
+    grid-template-columns: repeat(3, 1fr);
+    /*
+    grid-template-columns: repeat(3, 1fr) — создает сетку с
+    тремя равными столбцами.
+    1fr означает "одна доля свободного пространства".
+    Это значит, что каждый столбец будет занимать равную часть доступного пространства.
+    */
     margin-top: 42px;
     gap: 24px;
 }
 
-.cards-row {
-    display: flex;
-    gap: 24px;
+@media (max-width: 1024px) {
+/*
+@media (max-width: 1024px) — это медиа-запрос,
+который применяется, когда ширина экрана меньше или равна 1024 пикселя.
+Это позволяет адаптировать стили для устройств с меньшим экраном, таких как планшеты
+или большие смартфоны.
+*/
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
+@media (max-width: 600px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+    .gallery-card:nth-child(n+4) {
+        display: none;
+    }
+    .testimonial-card:nth-child(n+4) {
+        display: none;
+    }
+}
 
 .gallery-card {
     display: flex;
@@ -405,12 +488,40 @@ input {
 .input-fields {
     display: flex;
     flex-direction: column;
-    width: 520px;
+    width: 100%;
     gap: 12px;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
+    max-width: 520px;
+    width: 100%;
     gap: 24px;
+}
+
+@media (max-width: 1024px) {
+    .contact-h2 {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .contact-info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .input-fields {
+        width: 100%;
+    }
+
+    .contact-form {
+        align-items: center;
+    }
 }

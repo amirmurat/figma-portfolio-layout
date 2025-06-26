@@ -138,7 +138,7 @@
                 class="nav-links" — CSS-класс, по которому можно стилизовать весь список навигации.
                 Обычно внутри <ul> находятся <li> (элементы списка), каждый из которых содержит ссылку <a>.
                 -->
-                    <li><a href="#skills">About</a></li>
+                    <li class="about"><a href="#skills">About</a></li>
                     <!-- 
                     <li> — элемент списка. 
                     Используется внутри <ul> или <ol> для создания отдельных пунктов.
@@ -188,14 +188,14 @@
             </section>
             <section id="brands">
                 <div class="brands-grid">
-                    <img src="assets/Google.svg" alt="Google Logo">
-                    <img src="assets/Nike.svg" alt="Nike Logo">
-                    <img src="assets/Samsung.svg" alt="Samsung Logo">
-                    <img src="assets/Apple.svg" alt="Apple Logo">
-                    <img src="assets/Adidas.svg" alt="Adidas Logo">
+                    <img class="google-logo" src="assets/Google.svg" alt="Google Logo">
+                    <img class="nike-logo" src="assets/Nike.svg" alt="Nike Logo">
+                    <img class="samsung-logo" src="assets/Samsung.svg" alt="Samsung Logo">
+                    <img class="apple-logo" src="assets/Apple.svg" alt="Apple Logo">
+                    <img class="adidas-logo" src="assets/Adidas.svg" alt="Adidas Logo">
                 </div>
             </section>
-            <section id="skills">
+            <section class="skills" id="skills">
                 <div class="skills-grid">
                     <div class="skill-card">
                         <div class="skill-card-icon">
@@ -239,62 +239,58 @@
                 <div class="cards">
                     <h2>Latest work</h2>
                     <div class="cards-grid">
-                        <div class="cards-row">
-                            <div class="gallery-card">
-                                <div class="gallery-image">
-                                    <img src="assets/gallery-image-1.png">
-                                </div>
-                                <div class="gallery-bottom-text">
-                                    <p class="subtitle">Project title</p>
-                                    <p>UI, Art drection</p>
-                                </div>
+                        <div class="gallery-card">
+                            <div class="gallery-image">
+                                <img src="assets/gallery-image-1.png">
                             </div>
-                            <div class="gallery-card">
-                                <div class="gallery-image">
-                                    <img src="assets/gallery-image-2.png">
-                                </div>
-                                <div class="gallery-bottom-text">
-                                    <p class="subtitle">Project title</p>
-                                    <p>UI, Art drection</p>
-                                </div>
-                            </div>
-                            <div class="gallery-card">
-                                <div class="gallery-image">
-                                    <img src="assets/gallery-image-3.png">
-                                </div>
-                                <div class="gallery-bottom-text">
-                                    <p class="subtitle">Project title</p>
-                                    <p>UI, Art drection</p>
-                                </div>
+                            <div class="gallery-bottom-text">
+                                <p class="subtitle">Project title</p>
+                                <p>UI, Art drection</p>
                             </div>
                         </div>
-                        <div class="cards-row">
-                            <div class="gallery-card">
-                                <div class="gallery-image">
-                                    <img src="assets/gallery-image-4.png">
-                                </div>
-                                <div class="gallery-bottom-text">
-                                    <p class="subtitle">Project title</p>
-                                    <p>UI, Art drection</p>
-                                </div>
+                        <div class="gallery-card">
+                            <div class="gallery-image">
+                                <img src="assets/gallery-image-2.png">
                             </div>
-                            <div class="gallery-card">
-                                <div class="gallery-image">
-                                    <img src="assets/gallery-image-5.png">
-                                </div>
-                                <div class="gallery-bottom-text">
-                                    <p class="subtitle">Project title</p>
-                                    <p>UI, Art drection</p>
-                                </div>
+                            <div class="gallery-bottom-text">
+                                <p class="subtitle">Project title</p>
+                                <p>UI, Art drection</p>
                             </div>
-                            <div class="gallery-card">
-                                <div class="gallery-image">
-                                    <img src="assets/gallery-image-6.png">
-                                </div>
-                                <div class="gallery-bottom-text">
-                                    <p class="subtitle">Project title</p>
-                                    <p>UI, Art drection</p>
-                                </div>
+                        </div>
+                        <div class="gallery-card">
+                            <div class="gallery-image">
+                                <img src="assets/gallery-image-3.png">
+                            </div>
+                            <div class="gallery-bottom-text">
+                                <p class="subtitle">Project title</p>
+                                <p>UI, Art drection</p>
+                            </div>
+                        </div>
+                        <div class="gallery-card">
+                            <div class="gallery-image">
+                                <img src="assets/gallery-image-4.png">
+                            </div>
+                            <div class="gallery-bottom-text">
+                                <p class="subtitle">Project title</p>
+                                <p>UI, Art drection</p>
+                            </div>
+                        </div>
+                        <div class="gallery-card">
+                            <div class="gallery-image">
+                                <img src="assets/gallery-image-5.png">
+                            </div>
+                            <div class="gallery-bottom-text">
+                                <p class="subtitle">Project title</p>
+                                <p>UI, Art drection</p>
+                            </div>
+                        </div>
+                        <div class="gallery-card">
+                            <div class="gallery-image">
+                                <img src="assets/gallery-image-6.png">
+                            </div>
+                            <div class="gallery-bottom-text">
+                                <p class="subtitle">Project title</p>
+                                <p>UI, Art drection</p>
                             </div>
                         </div>
                     </div>
@@ -304,168 +300,164 @@
                 <div class="cards">
                     <h2>Testimonial</h2>
                     <div class="cards-grid">
-                        <div class="cards-row">
-                            <div class="testimonial-card">
-                                <div class="testiomonial-text">
-                                    <p class="subtitle">
-                                    This is a template Figma file,
-                                    <br>turned into code using Anima.
-                                    <br>Learn more at AnimaApp.com
-                                    </p>
-                                </div>
-                                <div class="client">
-                                    <div class="client-image">
-                                        <img src="assets/client-image.png">
-                                    </div>
-                                    <div class="rating">
-                                        <div class="stars">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                        </div>
-                                        <div class="client-info">
-                                            <p class="subtitle">Gemma Nolen</p>
-                                            <p>Google</p>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="testimonial-card">
+                            <div class="testiomonial-text">
+                                <p class="subtitle">
+                                This is a template Figma file,
+                                <br>turned into code using Anima.
+                                <br>Learn more at AnimaApp.com
+                                </p>
                             </div>
-                            <div class="testimonial-card">
-                                <div class="testiomonial-text">
-                                    <p class="subtitle">
-                                    This is a template Figma file,
-                                    <br>turned into code using Anima.
-                                    <br>Learn more at AnimaApp.com
-                                    </p>
+                            <div class="client">
+                                <div class="client-image">
+                                    <img src="assets/client-image.png">
                                 </div>
-                                <div class="client">
-                                    <div class="client-image">
-                                        <img src="assets/client-image.png">
+                                <div class="rating">
+                                    <div class="stars">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
                                     </div>
-                                    <div class="rating">
-                                        <div class="stars">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                        </div>
-                                        <div class="client-info">
-                                            <p class="subtitle">Gemma Nolen</p>
-                                            <p>Google</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="testimonial-card">
-                                <div class="testiomonial-text">
-                                    <p class="subtitle">
-                                    This is a template Figma file,
-                                    <br>turned into code using Anima.
-                                    <br>Learn more at AnimaApp.com
-                                    </p>
-                                </div>
-                                <div class="client">
-                                    <div class="client-image">
-                                        <img src="assets/client-image.png">
-                                    </div>
-                                    <div class="rating">
-                                        <div class="stars">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                        </div>
-                                        <div class="client-info">
-                                            <p class="subtitle">Gemma Nolen</p>
-                                            <p>Google</p>
-                                        </div>
+                                    <div class="client-info">
+                                        <p class="subtitle">Gemma Nolen</p>
+                                        <p>Google</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="cards-row">
-                            <div class="testimonial-card">
-                                <div class="testiomonial-text">
-                                    <p class="subtitle">
-                                    This is a template Figma file,
-                                    <br>turned into code using Anima.
-                                    <br>Learn more at AnimaApp.com
-                                    </p>
+                        <div class="testimonial-card">
+                            <div class="testiomonial-text">
+                                <p class="subtitle">
+                                This is a template Figma file,
+                                <br>turned into code using Anima.
+                                <br>Learn more at AnimaApp.com
+                                </p>
+                            </div>
+                            <div class="client">
+                                <div class="client-image">
+                                    <img src="assets/client-image.png">
                                 </div>
-                                <div class="client">
-                                    <div class="client-image">
-                                        <img src="assets/client-image.png">
+                                <div class="rating">
+                                    <div class="stars">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
                                     </div>
-                                    <div class="rating">
-                                        <div class="stars">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                        </div>
-                                        <div class="client-info">
-                                            <p class="subtitle">Gemma Nolen</p>
-                                            <p>Google</p>
-                                        </div>
+                                    <div class="client-info">
+                                        <p class="subtitle">Gemma Nolen</p>
+                                        <p>Google</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="testimonial-card">
-                                <div class="testiomonial-text">
-                                    <p class="subtitle">
-                                    This is a template Figma file,
-                                    <br>turned into code using Anima.
-                                    <br>Learn more at AnimaApp.com
-                                    </p>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testiomonial-text">
+                                <p class="subtitle">
+                                This is a template Figma file,
+                                <br>turned into code using Anima.
+                                <br>Learn more at AnimaApp.com
+                                </p>
+                            </div>
+                            <div class="client">
+                                <div class="client-image">
+                                    <img src="assets/client-image.png">
                                 </div>
-                                <div class="client">
-                                    <div class="client-image">
-                                        <img src="assets/client-image.png">
+                                <div class="rating">
+                                    <div class="stars">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
                                     </div>
-                                    <div class="rating">
-                                        <div class="stars">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                        </div>
-                                        <div class="client-info">
-                                            <p class="subtitle">Gemma Nolen</p>
-                                            <p>Google</p>
-                                        </div>
+                                    <div class="client-info">
+                                        <p class="subtitle">Gemma Nolen</p>
+                                        <p>Google</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="testimonial-card">
-                                <div class="testiomonial-text">
-                                    <p class="subtitle">
-                                    This is a template Figma file,
-                                    <br>turned into code using Anima.
-                                    <br>Learn more at AnimaApp.com
-                                    </p>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testiomonial-text">
+                                <p class="subtitle">
+                                This is a template Figma file,
+                                <br>turned into code using Anima.
+                                <br>Learn more at AnimaApp.com
+                                </p>
+                            </div>
+                            <div class="client">
+                                <div class="client-image">
+                                    <img src="assets/client-image.png">
                                 </div>
-                                <div class="client">
-                                    <div class="client-image">
-                                        <img src="assets/client-image.png">
+                                <div class="rating">
+                                    <div class="stars">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
                                     </div>
-                                    <div class="rating">
-                                        <div class="stars">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                            <img src="assets/star.svg">
-                                        </div>
-                                        <div class="client-info">
-                                            <p class="subtitle">Gemma Nolen</p>
-                                            <p>Google</p>
-                                        </div>
+                                    <div class="client-info">
+                                        <p class="subtitle">Gemma Nolen</p>
+                                        <p>Google</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testiomonial-text">
+                                <p class="subtitle">
+                                This is a template Figma file,
+                                <br>turned into code using Anima.
+                                <br>Learn more at AnimaApp.com
+                                </p>
+                            </div>
+                            <div class="client">
+                                <div class="client-image">
+                                    <img src="assets/client-image.png">
+                                </div>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
+                                    </div>
+                                    <div class="client-info">
+                                        <p class="subtitle">Gemma Nolen</p>
+                                        <p>Google</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testiomonial-text">
+                                <p class="subtitle">
+                                This is a template Figma file,
+                                <br>turned into code using Anima.
+                                <br>Learn more at AnimaApp.com
+                                </p>
+                            </div>
+                            <div class="client">
+                                <div class="client-image">
+                                    <img src="assets/client-image.png">
+                                </div>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
+                                        <img src="assets/star.svg">
+                                    </div>
+                                    <div class="client-info">
+                                        <p class="subtitle">Gemma Nolen</p>
+                                        <p>Google</p>
                                     </div>
                                 </div>
                             </div>
@@ -475,7 +467,7 @@
             </section>
             <section id="contact">
                 <div class="contact-grid">
-                    <h2>Lets work together</h2>
+                    <h2 class="contact-h2">Lets work together</h2>
                     <div class="contact-content">
                         <div class="contact-info">
                             <p>
